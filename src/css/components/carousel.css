@@ -85,3 +85,23 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
   gap: 12px;
   margin-bottom: 16px;
 }
+.carousel {
+  position: relative;
+}
+
+.carousel__controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 8px;
+  pointer-events: none;     /* le conteneur ne bloque pas le scroll/clic sur les images */
+}
+
+.carousel__button {
+  pointer-events: auto;     /* mais les boutons restent cliquables */
+  background: white;
+}
